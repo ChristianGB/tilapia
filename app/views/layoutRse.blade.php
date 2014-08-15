@@ -8,12 +8,13 @@
 <div id="Programas_rse">   		 @yield('Programas_rse')
 <?php  
 	foreach ($Programas as $key) {
+		echo HTML::image($key->Imagen, "Imagen no encontrada", array('id' => $key->Titulo, 'title' =>$key->Titulo)) ;
 		echo "<br>";
 		echo ($key->Titulo);
 		echo "<br>";
 		echo ($key->Descripcion);
-		echo "<br>";
-		echo ($key->Imagen);
+		echo "<br>";	
+		echo ($key->Categoria);
 		echo "<br>";
 	}
 ?>
@@ -21,13 +22,17 @@
 <div id="Eventos">     @yield('Eventos')
 <?php  
 	foreach ($Eventos as $key) {
+		echo HTML::image($key->Imagen, "Imagen no encontrada", array('id' => $key->Titulo, 'title' =>$key->Titulo)) ;
 		echo "<br>";
 		echo ($key->Titulo);
 		echo "<br>";
 		echo ($key->Descripcion);
 		echo "<br>";
-		echo ($key->Imagen);
+		echo ($key->Lugar);
 		echo "<br>";
+		echo ($key->Fecha);
+		echo "<br>";
+	
 	}
 ?>
 </div>
@@ -35,13 +40,13 @@
 	 @yield('Certificaciones')
 <?php  
 	foreach ($Certificaciones as $key) {
+		echo HTML::image($key->Imagen, "Imagen no encontrada", array('id' => $key->Titulo, 'title' =>$key->Titulo)) ;
 		echo "<br>";
 		echo ($key->Titulo);
 		echo "<br>";
 		echo ($key->Descripcion);
 		echo "<br>";
-		echo ($key->Imagen);
-		echo "<br>";
+	
 	}
 ?>
 	 </div>
