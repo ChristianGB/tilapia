@@ -6,8 +6,14 @@
 <body>
 <div id="Productos">
 <h3>Productos</h3>
+
 <?php
+
+
 foreach ($arreglo as $key) {
+
+	echo HTML::image($key->Imagen, "Imagen no encontrada", array('id' => $key->Titulo, 'title' =>$key->Titulo)) ;
+	
 	echo "<br>";
 	echo ($key->Titulo);
 	echo "<br>";

@@ -1,4 +1,21 @@
-<input type="button" value="Inicio"><input type="button" value="Nosotros"><input type="button" value="Productos"><input type="button" value="RSE"><input type="button" value="Bolsa de trabajo"><input type="button" value="Galeria"><input type="button" value="Contacto"><input type="text" name="buscar"><input type="button" value="Buscar">
+<form >
+<input type="submit" value="Inicio">
+<input type="submit" name="nosotros" value="Nosotros">
+<input type="submit" value="Productos">
+<input type="submit" value="RSE">
+<input type="submit" value="Bolsa de trabajo">
+<input type="submit" value="Galeria">
+<input type="submit" value="Contacto">
+<input type="submit" name="buscar">
+<input type="submit" value="Buscar">
+</form>
+<?php  if (Input::has('nosotros'))
+{
+	echo "Hola,";
+    Redirect::action('ProductoController@getProductos');
+}
+ ?>
+
 <br><br><div class="noticias"><h1>Noticias</h1></div>
 	<ul>
 		@foreach($noticia as $noti)

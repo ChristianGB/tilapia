@@ -14,4 +14,5 @@
 
 @section('Politica_Amb')
   <h3>Politica Ambiental</h3>
+  <p>aca van los objetivos de la empresa</p>
 @stop
