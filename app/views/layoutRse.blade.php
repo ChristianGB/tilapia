@@ -4,7 +4,7 @@
 	<title></title>
 </head>
 <body>
-
+<div id="todo">
 <div id="Programas_rse">   		 @yield('Programas_rse')
 <?php  
 	foreach ($Programas as $key) {
@@ -52,6 +52,6 @@
 	 </div>
 <div id="Politica_Amb">    @yield('Politica_Amb')</div>
 
-
+</div>
 </body>
 </html>

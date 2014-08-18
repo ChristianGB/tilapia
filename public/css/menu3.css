@@ -1,0 +1,210 @@
+
+.tabla
+{
+position: relative;
+margin-left:auto;
+margin-right:auto;
+width:70%;
+}
+
+#Mmenu
+{
+position: absolute;
+	z-index: 100;
+}
+
+h3{
+	font-weight: bold; color: white; text-align: center; font-family: Algerian;
+}
+p{
+	font-weight: bold; color: white; font-family: Chiller;
+}
+#busqueda
+{
+	margin-left: 800px;
+}
+#buscar
+{
+	padding: 5px 9px;
+	height: 23px;
+	width: 230px;
+	border: 1px solid #a4c3ca;
+	font: normal 13px 'trebuchet MS', arial, helvetica;
+	background: #f1f1f1;
+	-moz-border-radius: 50px 3px 3px 50px;
+	 border-radius: 50px 3px 3px 50px;
+	 -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+	 -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+	 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);            
+}
+#ingresar
+{		
+	background: #6cbb67;
+	background-image: -moz-linear-gradient(#95d788, #6cbb6b);
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #6cbb6b),color-stop(1, #95d788));
+	
+	-moz-border-radius: 3px 50px 50px 3px;
+	border-radius: 3px 50px 50px 3px;
+	
+	border-width: 1px;
+	border-style: solid;
+	border-color: #7eba7c #578e57 #447d43;
+	
+	 -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+	 -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+	 box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;   		
+
+	height: 35px;
+	margin: 0 0 0 10px;
+        padding: 0;
+	width: 90px;
+	cursor: pointer;
+	font: bold 14px Arial, Helvetica;
+	color: #23441e;
+	
+	text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+
+#ingresar:hover
+{		
+	background: #95d788;
+	background-image: -moz-linear-gradient(#6cbb6b, #95d788);
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #95d788),color-stop(1, #6cbb6b));
+}	
+
+#ingresar:active
+{		
+	background: #95d788;
+	outline: none;
+   
+	 -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+	 -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+	 box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;		
+}
+
+#ingresar::-moz-focus-inner
+{
+       border: 0;  /* Small centering fix for Firefox */
+}		body,html,div,blockquote,img,label,p,h1,h2,h3,h4,h5,h6,pre,ul,ol,li,dl,dt,dd,form,a,fieldset,input,th,td{border:0;outline:none;margin:0;padding:0;}
+ul{list-style:none;}
+
+/* Demo Page Styles */
+
+h2 {font: normal 26px Arial, sans-serif; padding: 20px 0; margin: 0 0 30px 0;}
+/*-------MENU------------------------*/
+.wrap {width: 960px; margin: 0 auto;}
+.demo-container {padding: 20px 0; width: 250px; float: left;}
+.demo-container.right {float: right;}
+.demo-container h4 {font-size: 14px; margin: 0 0 5px 0;}
+.clear {clear: both;}
+
+/* Vertical Mega Menu Styles */
+.menu{
+font: bold 13px Arial, sans-serif; 
+line-height: 16px; 
+background: #333;
+border-left: 1px solid #1B1B1B; 
+position: relative; /* Required */
+}
+.menu li a {
+display: block; 
+color: #fff; 
+padding: 12px 38px 12px 25px; 
+text-shadow: 1px 1px 1px #000; 
+text-decoration: none;  
+border-top: 1px solid #555; 
+border-bottom: 1px solid #222; 
+border-right: 1px solid #1B1B1B;
+}
+.menu li a:hover, .menu li.mega-hover a {
+background: #4b4b4b; 
+color: #fff; 
+border-right: 1px solid #4b4b4b;
+}
+.menu li a.dc-mega {
+position: relative;
+}
+/* Add arrow icon to parent links */
+.menu li a .dc-mega-icon {
+display: block; 
+position: absolute; 
+top: 18px; 
+right: 15px; 
+width: 6px; 
+height: 8px; 
+
+}
+.menu li .sub-container {
+position: absolute; /* Required */
+background: #4B4B4B;
+padding: 10px 10px 0 10px; 
+border: 1px solid #4b4b4b; 
+border-left: none;
+}
+
+
+.menu li .sub .row {
+width: 100%; overflow: hidden; /* Clear floats */
+}
+.menu li .sub li {
+float: none; 
+width: 150px; 
+font-size: 1em; 
+font-weight: normal;
+}
+.menu li .sub li.mega-hdr {
+float: left; /* Required */
+margin: 0 5px 10px 5px;
+}
+.menu li .sub a, .mega-menu.left li .sub a {
+background: none; 
+border: none; 
+text-shadow: none;
+float: none;
+color: #fff; 
+padding: 7px 10px; 
+display: block;
+text-decoration: none; 
+font-size: 0.9em;
+}
+.menu li .sub li.mega-hdr a.mega-hdr-a {
+padding: 5px 5px 5px 15px; 
+margin-bottom: 5px; 
+background: #E88221; 
+text-transform: uppercase; 
+font-weight: bold; 
+color: #fff; 
+text-shadow: 1px 1px 1px #333;
+}
+.menu li .sub li.mega-hdr a.mega-hdr-a:hover {
+color: #000; 
+text-shadow: none;
+}
+.menu .sub li.mega-hdr li a {
+padding: 4px 5px 4px 20px; 
+background: url(images/arrow_white.png) no-repeat 5px 8px; 
+font-weight: normal;
+}
+.menu .sub li.mega-hdr li a:hover {
+color: #a32403; 
+background: #efefef url(images/arrow_on.png) no-repeat 5px 8px;
+}
+.menu .sub ul li {
+padding-right: 0;
+}
+/* Styling for menu items with only 2 levels */
+.menu li .sub-container.non-mega .sub {
+padding: 10px;}
+.menu li .sub-container.non-mega li {
+padding: 0; 
+margin: 0;
+width: 150px;
+}
+.menu li .sub-container.non-mega li a {
+padding: 7px 5px 7px 22px; 
+background: url(images/arrow_white.png) no-repeat 7px 10px;
+}
+.menu li .sub-container.non-mega li a:hover {
+color: #a32403; 
+background: #efefef url(images/arrow_on.png) no-repeat 7px 10px;
+}

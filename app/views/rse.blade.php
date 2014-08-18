@@ -1,3 +1,6 @@
+{{ HTML::style('css/menu.css') }}
+@extends('menu')
+
 @extends('layoutRse')
 
 @section('Programas_rse')
