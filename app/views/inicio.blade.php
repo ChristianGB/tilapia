@@ -1,3 +1,5 @@
+@extends('menu')
+
 @extends('layout')
 
 @section('Garantias')
