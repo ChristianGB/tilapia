@@ -1,5 +1,5 @@
 #cabecera{
-	height:200px;
+	height:150px;
 	width:1600px;
 	background-color: #999;
 	position:absolute;
@@ -8,21 +8,22 @@
 }
 #todo{
 	position:absolute;
-	top: 230px;
+	top: 180px;
 	left: 0px;
 }
-
+#footer { clear:both; background:red; color:white; width:100%; } 
   /* el menú en si mismo */
   .menu  {
+  
 	position:absolute;
-		top: 201px;
+		top: 149px;
 		left: 0px;
     border-radius: 5px;
     list-style-type: none;
     margin: 0 auto; /* si queremos centrarlo */
     padding: 0;
     /* la altura y su ancho dependerán de los textos */
-    height: 40px; 
+    /*height: 40px; */
     
     /* el color de fondo */
     background: #555;
@@ -119,7 +120,7 @@
     margin: 0;
     /* el ancho dependerá de los textos a utilizar */
     padding: 5px 20px;
-    width: 100px;
+    width: 10px;
   }
   /* el último n otiene un borde */
   .menu ul li:last-child a { border: none; }

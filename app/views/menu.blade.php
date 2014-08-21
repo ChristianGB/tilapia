@@ -16,3 +16,6 @@
 <li><input type="text" name="buscar"><input type="button" value="Buscar"></li>
 </ul>
 </div>
+
+<div id="footer">This is the footer</div>
+

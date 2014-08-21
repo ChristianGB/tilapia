@@ -19,4 +19,5 @@
 	E-mail:<input type="text" name="buscar"><br>
 	<input type="button" value="Suscribirse">
 </div>
+
 </div>
