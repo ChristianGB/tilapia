@@ -1,33 +1,30 @@
 @extends('menu')
 <br><br>
 <div id="todo">
-<div class="mision"><h1>Mision</h1>
-	<ul>
-		<h2>Producir la mejor tilapia, desarrollando comunidades.</h2>	
-	</ul>
-</div>
 <br><br>
-<div class="vision"><h1>Vision</h1>
-	<ul>
-		<h2>Ser la empresa lider global en la producción, industrialización y
-		comercialización de tilapia; pero sobre todo ser proveedores de alimento de alto valor 
-		nutrimental, sostenibilidad social y social.
-		</h2>
-	</ul>
-</div>
-<br><br>
-<div class="valores"><h1>Valores</h1>
-	<ul>
-		<h2>Calidad/Continuidad/Responsabilidad</h2>	
-	</ul>
-</div>
-<br><br>
-<div class="objetivos"><h1>Objetivos de la empresa</h1>
-	<ul>
-		<h2>Ser la empresa lider global en la producción, industrialización y
-		comercialización de tilapia; pero sobre todo ser proveedores de alimento de alto valor 
-		nutrimental, sostenibilidad social y social.</h2>	
-	</ul>
+<div id="tabla1">
+	<TABLE BORDER="1" aling=center> 
+		<TR> 
+			<TD>Mision: <br>
+			Producir la mejor tilapia, desarrollando comunidades.
+			</TD> 
+			<TD>Vision: <br>
+			Ser la empresa lider global en la producción, industrialización y
+			comercialización de tilapia; pero sobre todo ser proveedores de alimento de alto valor
+			nutrimental, sostenibilidad social y social.
+			</TD>  
+		</TR> 
+		<TR> 
+			<TD>Valores: <br>
+			Calidad/Continuidad/Responsabilidad
+			</TD> 
+			<TD>Objetivos de la empresa
+			Ser la empresa lider global en la producción, industrialización y
+			comercialización de tilapia; pero sobre todo ser proveedores de alimento de alto valor
+			nutrimental, sostenibilidad social y social.
+			</TD>  
+		</TR> 
+	</TABLE> 
 </div>
 <br><br>
 
@@ -39,15 +36,20 @@
 		<tr>
         <th colspan=5> Directorio </th>
 		<tr>@foreach($directorio as $dire)
-				{{'<td>'.'-Nombre: '.$dire->Nombre.'<br>'.'-Puesto: '.$dire->Puesto.'<br>'.'-Dirección: '.$dire->Direccion.'<br>'.'-E-mail: '.$dire->Email.'<br>'.'-Teléfono: '.$dire->Telefono.' '.'-Ext.: '.$dire->Ext.'<br>'.'Celular: '.$dire->Celular.'<br>'.'<td>'.HTML::image($dire->Imagen, "Imagen no encontrada").'<br><br>'.'<tr>'}}
+				{{'<td>'.HTML::image($dire->Imagen, "Imagen no encontrada").'<td>'
+				.'-Nombre: '.$dire->Nombre.
+				'<br>'.'-Puesto: '.$dire->Puesto.
+				'<br>'.'-Dirección: '.$dire->Direccion.
+				'<br>'.'-E-mail: '.$dire->Email.
+				'<br>'.'-Teléfono: '.$dire->Telefono.' '.'-Ext.: '.$dire->Ext.
+				'<br>'.'Celular: '.$dire->Celular.
+				'<br>'.'<br><br>'.'<tr>'}}
 			@endforeach  
 		</table>		
 		</ul>
 	</ul>
 </div>
 <br><br>
-
-
 
 
 <div class="organigrama"><h1>Organigrama</h1>

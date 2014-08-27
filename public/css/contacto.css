@@ -14,7 +14,8 @@ form.contacto {
     width: 440px;
 	position:absolute;
 	top: 230px;
-	left: 0px;
+	left: 50px;
+	
 }
 form.contacto fieldset {
     background: 0 0 white;

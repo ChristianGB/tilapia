@@ -1,22 +1,25 @@
 #cabecera{
-	height:150px;
-	width:1600px;
-	background-color: #999;
+	height:189px;
+	width:1200px;
+	background-image: url('../imagenes/cabecera.jpg');
 	position:absolute;
 	top: 0px;
 	left: 0px;
 }
 #todo{
 	position:absolute;
-	top: 180px;
-	left: 0px;
+	top: 208px;
+	
+	left: 100px; right: 100px;
 }
-#footer { clear:both; background:red; color:white; width:100%; } 
+
+
+#footer { clear:both; background:darkblue; color:white; width:100%; bottom: 0; position: fixed; } 
   /* el menú en si mismo */
   .menu  {
   
 	position:absolute;
-		top: 149px;
+		top: 190px;
 		left: 0px;
     border-radius: 5px;
     list-style-type: none;
@@ -26,12 +29,12 @@
     /*height: 40px; */
     
     /* el color de fondo */
-    background: #555;
-    background: -moz-linear-gradient(#555,#222);
-    background: -webkit-linear-gradient(#555,#222);
-    background: -o-linear-gradient(#555,#222);
-    background: -ms-linear-gradient(#555,#222);
-    background: linear-gradient(#555,#222);
+    background: #2501D7;
+    background: -moz-linear-gradient(#0F01D7,#222);
+    background: -webkit-linear-gradient(#0F01D7,#222);
+    background: -o-linear-gradient(#0F01D7,#222);
+    background: -ms-linear-gradient(#0F01D7,#222);
+    background: linear-gradient(#0F01D7,#222);
   }
 
   /* si es necesario, evitamos que Blogger de problemas con los saltos de línea cuando escribimos el HTML */
