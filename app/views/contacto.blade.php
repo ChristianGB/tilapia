@@ -2,6 +2,7 @@
 {{ HTML::style('css/menu.css') }}
 {{ HTML::style('css/contacto.css') }}
 {{ HTML::script('js/funciones.js') }}
+{{ HTML::script('js/jquery.js') }}
 <div>
 	<form method="post" class="contacto">
  	    <fieldset>
