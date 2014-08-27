@@ -23,3 +23,25 @@ Route::post('formulario-noticia','FormularioController@formularioNoticia');
 //Route::get('formulario-noticia','FormularioController@mostrarNoticia');
 
 Route::get('/contacto', 'ContactoController@formularioContacto');
+
+
+Route::get("programadd", function(){
+    return View::make("AgregarProgramas");
+});
+
+Route::get("edicion", function(){
+    return View::make("PanelEdicion");
+});
+
+Route::get("test/{id?}",'InformationController@ajaxrequest');
+Route::get("edicionA",'SendContentController@getProgramas');
+Route::post("insercion","AddProductController@AddnewItem");
+Route::post("addProgram","RseEditionController@AddnewProgram");
+Route::get("eliminar/{id?}","EliminarController@destroy");
+
+
+// route to show the login form
+Route::get('login', array('uses' => 'LoginController@showLogin'));
+
+// route to process the form
+Route::post('login', array('uses' => 'LoginController@doLogin'));
