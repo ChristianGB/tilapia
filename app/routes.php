@@ -32,7 +32,8 @@ Route::get('/galeria1',function()
 Route::post('formulario','FormularioController@formularioNoticia');
 Route::post('formulario','FormularioController@formularioPuesto');
 
-Route::get('/galeria1', 'GaleriaController@galeria');
+Route::get('/galeria1/{id}', 'GaleriaController@galeria');
+Route::get('/galeria', 'GaleriaController@album');
 
 Route::get('/contacto', 'ContactoController@formularioContacto');
 
