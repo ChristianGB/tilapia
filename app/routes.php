@@ -29,18 +29,18 @@ Route::get('/galeria1',function()
 	return View::make('galeria1');
 });
 
+
+
+
 Route::post('formulario','FormularioController@formularioNoticia');
 Route::post('formulario','FormularioController@formularioPuesto');
 
-<<<<<<< HEAD
 Route::get('/galeria1/{id}', 'GaleriaController@galeria');
 Route::get('/galeria', 'GaleriaController@album');
-=======
+
 Route::get('formulario-noticia','FormularioController@formularioPuesto');
 
 Route::get('/galeria1', 'GaleriaController@galeria');
->>>>>>> origin/master
-
 
 Route::get('/contacto', 'ContactoController@formularioContacto');
 
