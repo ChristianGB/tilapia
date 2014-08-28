@@ -14,10 +14,6 @@
 		@endforeach
 	</ul>
 	
-<div class="newsletter"><h2>Newsletter</h2>
-	Nombre:<input type="text" name="nombre"><br>
-	E-mail:<input type="text" name="buscar"><br>
-	<input type="button" value="Suscribirse">
-</div>
+<div><br></div><br><div><br></div>
 
 </div>
