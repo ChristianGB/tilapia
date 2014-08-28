@@ -52,6 +52,7 @@ Route::get("test/{id?}",'InformationController@ajaxrequest');
 Route::get("edicionA",'SendContentController@getProgramas');
 Route::post("insercion","AddProductController@AddnewItem");
 Route::post("addProgram","RseEditionController@AddnewProgram");
+Route::post("addProgram","RseEditionController@AddnewEvent");
 Route::get("eliminar/{id?}","EliminarController@destroy");
 
 
