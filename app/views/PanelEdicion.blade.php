@@ -12,7 +12,7 @@
 		
 		@foreach ($Programas as $key ) 
 		
-		<div id="content"class="getin">
+		<div id="content" class="geting"data-contenido="{{$key->id}}">
 				<img src={{$key->Imagen}} id="imagen">
 				<h2 class="titulo">{{$key->Titulo}}</h2>
 				<p class="categoria">{{$key->Categoria}}</p>

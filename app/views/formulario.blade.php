@@ -1,4 +1,4 @@
-<div id:"noticias">
+<div id="noticias">
 <h2>Formulario de noticias</h2>
 
 {{Form::open(array('action' => 'FormularioController@formularioNoticia'))}}
@@ -25,7 +25,7 @@
 </div>
 
 
-<div id:"puestos">
+<div id="puestos">
 <h2>Formulario de puestos</h2>
 
 {{Form::open(array('action' => 'FormularioController@formularioPuesto'))}}

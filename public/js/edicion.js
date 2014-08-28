@@ -1,12 +1,16 @@
 $(document).ready(function(){
    
-   $('#content').click(function(evnt) {
-	   
-	    var hv = $('#SpecialV').map(function(){
-        return $(this).val()
-    }).get()
+   $('.geting').click(function(evnt) {
+	   $variable=$(this).attr("data-contenido");
+	   alert($variable);
 
-    		alert(hv);
+$.post( 'edicionA', { id: $variable }) 
+  .done(function( id ) {
+    alert( "Data Loaded: " + id );
+  });
+
+
+    		//alert($(this).attr("data-contenido"));
 	});
 
 });

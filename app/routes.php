@@ -31,7 +31,7 @@ Route::get('/galeria1',function()
 
 Route::post('formulario-noticia','FormularioController@formularioNoticia');
 
-//Route::get('formulario-noticia','FormularioController@mostrarNoticia');
+Route::get('formulario-noticia','FormularioController@formularioPuesto');
 
 Route::get('/contacto', 'ContactoController@formularioContacto');
 
@@ -56,3 +56,9 @@ Route::get('login', array('uses' => 'LoginController@showLogin'));
 
 // route to process the form
 Route::post('login', array('uses' => 'LoginController@doLogin'));
+Route::post('edicionA',function(){
+	if(Request::ajax()){
+		var_dump(Input::all());
+	return 'ajax lol tehre';
+	}
+});
