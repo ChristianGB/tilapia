@@ -13,26 +13,36 @@ class FormularioController extends BaseController {
 			'Descripcion'=>$descripcion,
 			'Imagen'=>$imagen,
 			'Tipo'=>$tipo));
-		return Redirect::to('formulario-noticia')->with('mensaje', $mensaje1);
+		return Redirect::to('formulario')->with('mensaje', $mensaje1);
 		}
 		
 		catch(ErrorException $e){
-			return View::make('formulario-noticia')->with('mensaje', $error);
-		}
-		
-		
-		
+			return View::make('formulario')->with('mensaje', $error);
+		}	
 	}
 	
-	public function mostrarNoticia(){
-		//return array('' => 'Choose a User') + DB::table('contenido')->list('idContenido', 'Titulo');
+	
+	public function formularioPuesto(){
+		$titulo= $_POST["Titulo"];
+		$descripcion= $_POST["Descripcion"];
 		
-		//$bd2 = DB::table('contenido') ->lists('Titulo', 'idContenido');
-		//$combo = array(0 => "Seleccione...") + $bd2;
-		//$seleccion = array();
-		//return View::make('formulario-noticia', compact('combo','seleccion'));
+		$tipo=2;
+		$mensaje1='datos almacenados';
+		$error='datos incorrectos';
+		try{
+		 $bd = DB::table('contenido')->insertGetId(array(
+			'Titulo'=>$titulo,
+			'Descripcion'=>$descripcion,
+			
+			'Tipo'=>$tipo));
+		return Redirect::to('formulario')->with('mensaje', $mensaje1);
+		}
 		
+		catch(ErrorException $e){
+			return View::make('formulario')->with('mensaje', $error);
+		}		
 	}
+	
 }
 	
 

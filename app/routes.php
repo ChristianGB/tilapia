@@ -29,9 +29,13 @@ Route::get('/galeria1',function()
 	return View::make('galeria1');
 });
 
-Route::post('formulario-noticia','FormularioController@formularioNoticia');
+Route::post('formulario','FormularioController@formularioNoticia');
+Route::post('formulario','FormularioController@formularioPuesto');
 
 Route::get('formulario-noticia','FormularioController@formularioPuesto');
+
+Route::get('/galeria1', 'GaleriaController@galeria');
+
 
 Route::get('/contacto', 'ContactoController@formularioContacto');
 
