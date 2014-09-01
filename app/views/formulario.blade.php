@@ -1,3 +1,19 @@
+@extends('menuFormulario')
+{{ HTML::script('js/jquery.js') }}
+{{ HTML::script('js/formularioagregar.js') }}
+{{ HTML::style('css/menu.css') }}
+
+
+<div id="cabecera"></div>
+<div id="menu">
+<ul class="menu">
+<li >{{HTML::link('#', 'Noticias', array('title' => 'Ir a ','class'=>'mostrarnoticia'))}}</li>
+<li >{{HTML::link('#', 'Puestos', array('title' => 'Ir a ','class'=>'mostrarpuestos'))}}</li>
+<li >{{HTML::link('#', 'Programas', array('title' => 'Ir a ','class'=>'mostrarprogramas'))}}</li>
+<li >{{HTML::link('#', 'Eventos', array('title' => 'Ir a ','class'=>'mostrareventos'))}}</li>
+</ul>
+<div id="todo">
+
 <div id="noticias">
 <h2>Formulario de noticias</h2>
 
@@ -56,21 +72,20 @@ foreach ($categorias as $key ) {
 }
 ?>
 <div id="programas">
-
+<h2>Formulario de programas</h2>
 	 {{Form::open(array('action' => 'RseEditionController@AddnewProgram','enctype'=>'multipart/form-data'))}}
     
      <br>Nombre del programa {{Form::text('Titulo')}}
      <br>Descripcion:<br> {{Form::textarea('Descripcion')}}
      <br>Categoria:"  {{Form::select('Categoria', $CatSelect, array_values($CatSelect)[0])}}
      <br>imagen     {{ Form::file('Imagen')}}
-        
-    {{  Form::submit('Aceptar')}}
+    {{  Form::submit('aceptar')}}
 	{{Form::close() }}
 
-<div/>
+</div>
 
 <div id="eventos">
-
+<h2>Formulario de eventos</h2>
 	 {{Form::open(array('action' => 'RseEditionController@AddnewEvent','enctype'=>'multipart/form-data'))}}
     
      <br>Nombre del evento {{Form::text('Titulo')}}
@@ -84,4 +99,7 @@ foreach ($categorias as $key ) {
     {{  Form::submit('Aceptar')}}
 	{{Form::close() }}
 
-<div/>
+</div>
+
+
+</div>

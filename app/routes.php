@@ -66,7 +66,7 @@ Route::get("eliminar/{id?}","EliminarController@destroy");
 Route::post('edicionA',function(){
 	if(Request::ajax()){
 		var_dump(Input::all());
-	return 'ajax lol tehre';
+	return View::make('edicionA')->with('id', $id);
 	}
 });
 
